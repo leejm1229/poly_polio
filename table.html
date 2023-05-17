@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+</head>
+
+<body>
+    <header>
+        <h1>테이블 실습1</h1>
+    </header>
+
+    <main>
+        <h2>테이블 구조</h2>
+        <table border="1">
+            <!-- 하나의 행 -->
+            <tr>
+                <!-- 열 만들기 -->
+                <th>1행 1열</th>
+                <th>1행 2열</th>
+                <th>1행 3열</th>
+            </tr>
+            <tr>
+                <th>2행 1열</th>
+                <th>2행 2열</th>
+                <th>2행 3열</th>
+            </tr>
+            <tr>
+                <th>3행 1열</th>
+                <th>3행 2열</th>
+                <th>3행 3열</th>
+            </tr>
+        </table>
+    </main>
+    <hr>
+    <!-- 테이블 실습2-->
+    <section>
+        <h2>테이블 실습2</h2>
+        <table border="2">
+
+            <th>
+                <ul>
+                    <li> 내 사랑아</li>
+                    <li>너는 어여쁘고</li>
+                    <li>어여쁘다</li>
+                    <li>네 눈이</li>
+                    <li>비둘기 같구나</li>
+                </ul>
+            </th>
+            <th><img src="./img/green.jpg" style="width:100px; height:100px;"></th>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>테이블 실습 3</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>번호</th>
+                    <th>이름</th>
+                    <th>점수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>1</th>
+                    <td>강태근</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <td>이승희</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <th>3</th>
+                    <td>김남훈</td>
+                    <td>A+</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>A+</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>테이블 실습3</h2>
+        <table border="2">
+            <tr>
+                <td WIDTH="200" HEIGHT="200" align="center">
+                    강태환
+                </td>
+                <td WIDTH="200" HEIGHT="200" align="center">
+                    홍윤기
+                </td>
+            </tr>
+            <tr>
+                <td WIDTH="200" HEIGHT="200" align="center">
+                    최경민
+                </td>
+                <td WIDTH="200" HEIGHT="200" align="center">
+                    이승희
+                </td>
+            </tr>
+        </table>
+    </section>
+    <hr>
+    <section>
+        <h2>테이블 실습4</h2>
+        <table border="2">
+            <colgroup>
+                <col style="width: 300px;">
+                <col style="width: 300px;">
+                <col style="width: 300px;">
+                <col style="width: 300px;">
+            </colgroup>
+            <tr>
+                <th>이름</th>
+                <td></td>
+                <th>연락처</th>
+                <td></td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="3"></td>
+            </tr>
+            <tr>
+                <th>자기소개</th>
+                <td colspan="3"></td>
+            </tr>
+        </table>
+    </section>
+    
+    <hr>
+    
+    <section>
+        <h2>테이블 실습5</h2>
+        <table border="2" width="100%" cellspacing="10px" cellpadding="20px">
+            <colgroup>
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+                <col style="width: 100px;">
+            </colgroup>
+            <tr>
+                <td colspan="3" style="text-align: center; height: 50px; background: lightblue;">사과의 종류</td>
+            </tr>
+            <tr>
+                <th>홍로</th>
+                <th>아오리</th>
+                <th>추광</th>
+            </tr>
+            <tr>
+                <th>홍옥</th>
+                <th>부사</th>
+                <th>채항</th>
+                
+            </tr>
+        </table>
+    </section>
+
+    <fotter>
+
+    </fotter>
+</body>
+
+</html>
