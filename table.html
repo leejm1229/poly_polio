@@ -1,178 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>table</title>
+    <title>Document</title>
 </head>
-
 <body>
+    <!-- 상단 -->
     <header>
-        <h1>테이블 실습1</h1>
+        <h1>테이블 실습</h1>
     </header>
 
+    <!-- 본문 -->
     <main>
-        <h2>테이블 구조</h2>
-        <table border="1">
-            <!-- 하나의 행 -->
-            <tr>
-                <!-- 열 만들기 -->
-                <th>1행 1열</th>
-                <th>1행 2열</th>
-                <th>1행 3열</th>
-            </tr>
-            <tr>
-                <th>2행 1열</th>
-                <th>2행 2열</th>
-                <th>2행 3열</th>
-            </tr>
-            <tr>
-                <th>3행 1열</th>
-                <th>3행 2열</th>
-                <th>3행 3열</th>
-            </tr>
-        </table>
-    </main>
-    <hr>
-    <!-- 테이블 실습2-->
-    <section>
-        <h2>테이블 실습2</h2>
-        <table border="2">
-
-            <th>
-                <ul>
-                    <li> 내 사랑아</li>
-                    <li>너는 어여쁘고</li>
-                    <li>어여쁘다</li>
-                    <li>네 눈이</li>
-                    <li>비둘기 같구나</li>
-                </ul>
-            </th>
-            <th><img src="./img/green.jpg" style="width:100px; height:100px;"></th>
-        </table>
-    </section>
-
-    <hr>
-
-    <section>
-        <h2>테이블 실습 3</h2>
-        <table border="1">
-            <thead>
+        <!-- 테이블 실습1 -->
+        <section>
+            <h2>테이블 구조</h2>
+            <table border="1">
+                <!-- 하나의 행입니다. -->
                 <tr>
-                    <th>번호</th>
-                    <th>이름</th>
-                    <th>점수</th>
+                    <!-- 열 만들기 -->
+                    <td>박경덕</td>
+                    <td>정수영</td>
+                    <td>박준하</td>
+                    <td>박태현</td>
                 </tr>
-            </thead>
-            <tbody>
+                <!-- 하나의 행입니다. -->
                 <tr>
-                    <th>1</th>
-                    <td>강태근</td>
-                    <td>A+</td>
+                    <td>김은영</td>
+                    <td>최민정</td>
+                    <td>김관중</td>
+                    <td>이정민</td>
                 </tr>
-                <tr>
-                    <th>2</th>
-                    <td>이승희</td>
-                    <td>A+</td>
-                </tr>
-                <tr>
-                    <th>3</th>
-                    <td>김남훈</td>
-                    <td>A+</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td>A+</td>
-                </tr>
-            </tfoot>
-        </table>
-    </section>
+            </table>
+        </section>
 
-    <hr>
+        <hr>
 
-    <section>
-        <h2>테이블 실습3</h2>
-        <table border="2">
-            <tr>
-                <td WIDTH="200" HEIGHT="200" align="center">
-                    강태환
-                </td>
-                <td WIDTH="200" HEIGHT="200" align="center">
-                    홍윤기
-                </td>
-            </tr>
-            <tr>
-                <td WIDTH="200" HEIGHT="200" align="center">
-                    최경민
-                </td>
-                <td WIDTH="200" HEIGHT="200" align="center">
-                    이승희
-                </td>
-            </tr>
-        </table>
-    </section>
-    <hr>
-    <section>
-        <h2>테이블 실습4</h2>
-        <table border="2">
-            <colgroup>
-                <col style="width: 300px;">
-                <col style="width: 300px;">
-                <col style="width: 300px;">
-                <col style="width: 300px;">
-            </colgroup>
-            <tr>
-                <th>이름</th>
-                <td></td>
-                <th>연락처</th>
-                <td></td>
-            </tr>
-            <tr>
-                <th>주소</th>
-                <td colspan="3"></td>
-            </tr>
-            <tr>
-                <th>자기소개</th>
-                <td colspan="3"></td>
-            </tr>
-        </table>
-    </section>
-    
-    <hr>
-    
-    <section>
-        <h2>테이블 실습5</h2>
-        <table border="2" width="100%" cellspacing="10px" cellpadding="20px">
-            <colgroup>
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-                <col style="width: 100px;">
-            </colgroup>
-            <tr>
-                <td colspan="3" style="text-align: center; height: 50px; background: lightblue;">사과의 종류</td>
-            </tr>
-            <tr>
-                <th>홍로</th>
-                <th>아오리</th>
-                <th>추광</th>
-            </tr>
-            <tr>
-                <th>홍옥</th>
-                <th>부사</th>
-                <th>채항</th>
+        <!-- 테이블 실습2 -->
+        <section>
+            <h2>테이블 실습2</h2>
+            <table border="1">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>최민영</li>
+                            <li>최유림</li>
+                            <li>김남훈</li>
+                            <li>강태환</li>
+                        </ul>
+                    </td>
+                    <td>
+                        <img src="./img/leaf.png" alt="" width="200px">
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- 테이블 실습3 -->
+        <section>
+            <h2>테이블 실습 3</h2>
+            <table border="1">
+                <caption>
+                    <strong>Modern Browser</strong>
+                    <p>국내에서 자주 사용하는 모던 브라우저</p>
+                </caption>
                 
-            </tr>
-        </table>
-    </section>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>이름</th>
+                        <th>점수</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>강태근</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>이승희</td>
+                        <td>A+</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>김남훈</td>
+                        <td>A+</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>A+</td>
+                    </tr>
+                </tfoot>                
+            </table>
+        </section>
 
-    <fotter>
+        <section>
+            <h2>테이블 실습3</h2>
+            <table border="2">
+                <tr>
+                    <td WIDTH="200" HEIGHT="200" align="center">
+                        강태환
+                    </td>
+                    <td WIDTH="200" HEIGHT="200" align="center">
+                        홍윤기
+                    </td>
+                </tr>
+                <tr>
+                    <td WIDTH="200" HEIGHT="200" align="center">
+                        최경민
+                    </td>
+                    <td WIDTH="200" HEIGHT="200" align="center">
+                        이승희
+                    </td>
+                </tr>
+            </table>
+        </section>
 
-    </fotter>
+        <section>
+            <h2>테이블 실습4</h2>
+            <table border="1">
+                <colgroup>
+                    <col style="width:100px;">
+                    <col style="width:300px;">
+                    <col style="width:100px;">
+                    <col style="width:300px;">
+                </colgroup>
+                
+                <tr>
+                    <td >이름</td>
+                    <td ></td>
+                    <td >연락처</td>
+                    <td ></td>
+                </tr>
+                <tr>
+                    <td >주소</td>
+                    <td  colspan="3">a</td>
+
+                </tr>
+                <tr>
+                    <td >자기소개</td>
+                    <td  colspan="3"></td>
+                </tr>
+            </table>
+        </section>
+        
+
+        <section>
+            <h2>테이블 실습5</h2>
+            <table border="1" width="100%" 
+                cellspacing="10px" cellpadding="20px" >
+                <tr>
+                    <td colspan="3">사과의 종류</td>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>a</td>
+                    <td>a</td>
+                </tr>
+                <tr>
+                    <td>a</td>
+                    <td>a</td>
+                    <td>a</td>
+                </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <!-- 하단 -->
+    <footer>
+
+    </footer>
+
 </body>
-
 </html>

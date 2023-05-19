@@ -7,30 +7,53 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/base.css">
     <style>
-        header{
-            color: blue;
+
+
+        /* 내부스타일 */
+        header {
+            color:#0000ff;
+        }
+
+        main {
+            color:#ff0000;
+        }
+
+        .navigation {
+            font-size: 30px;
         }
     </style>
+
+
 </head>
 <body>
+
+    <style>
+        header {
+            background-color: #cccccc;
+            color:#ff0000;
+        }
+    </style>
+
+    <!-- 사이트 연습 -->
     <header>
         여기기 해더 영역 입니다.
         로고와 메뉴가 같이 있어요.
-        <nav>
+        
+        <nav class="navigation">
             메뉴목록
         </nav>
     </header>
 
     <main>
         <!-- 목록 -->
-        <ul>
+        <ul type="circle">
             <li>박태현</li>
             <li>박준하</li>
             <li>정수영</li>
             <li>박경덕</li>
         </ul>
 
-        <ol>
+        <ol type="A">
             <li>임서영</li>
             <li>김하영</li>
             <li>김재영</li>
@@ -42,7 +65,7 @@
 
         <section>
             2023
-            <a href="login/">박태현-안녕</a>
+            <a href="hello.htm">박태현-안녕</a>
 
             <article>
                 lkgalfdg
