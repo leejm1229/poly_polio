@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Jiny-Jekyll-Bootstrap
 부트스트랩 CSS를 기반으로 제작된 지킬 템블릿 빌더 입니다.
 사이트를 제작하기 위한 다양한 레이아웃과 기본 코드를 제공합니다.
@@ -32,3 +33,14 @@ https://shopify.github.io/liquid/
 ```
 {{site.layout.bgcolor}}
 ```
+=======
+# poly data HTML/CSS 2023
+
+## 동기화
+
+```bash
+git remote add src https://github.com/infohojin/poly_data_html_2023.git
+git fetch src master
+git merge
+```
+>>>>>>> 5fc67b572cdb4f79e11a9ab3a6085f6529491e9d
