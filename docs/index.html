@@ -42,9 +42,7 @@
             </div>
         </div>
         <!-- Spinner End -->
-        <!-- Spinner End -->
-
-<!-- Header Start -->
+        <!-- Header Start -->
 <div class="renewal2021">
     <div class="upper">
         <ul class="link_crfix">
@@ -54,7 +52,7 @@
             <li class="item">채용안내</li>
         </ul>
 
-        <ul class="link_crfix">
+        <ul class="link_crfix" id="upper_link">
             <li class="item"><a href="#">회원가입</a></li>
             <li class="item"><a href="./login.html">로그인</a></li>
         </ul>
@@ -80,51 +78,113 @@
     </div>
 </div>
 <div class="divide_line"></div>
+<!-- Header End -->
         <!-- Carousel Start -->
-<div class="container-xxl bg-white p-0">
-    <div id="main_color" class="d-flex justify-content-center" style="padding-right: 0;">
-        
+<div class="container-fluid p-0 mb-5">
+    <div id="main_color">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/ad/ad1.png" alt="Image">
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/ad/ad2.png" alt="Image">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 </div>
-    <br>
-    <!-- Carousel End -->
+<br>
+<!-- Carousel End -->
 
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center wow fadeInUp" data-wow-delay="0.2s">
-                <div class="exchange_rate">
-                    <h1>Best 환율</h1>
-                    <ul>
-                        <li>
-                            <img src="./img/tit1.png"></img><br>
-                            <span class="price" id="usdDealBascRt">1,318.20</span>
-                        </li>
-                        <li>
-                            <img src="./img/tit2.png"></img><br>
-                            <span class="price" id="usdDealBascRt">1,420.10</span>
-                        </li>
-                        <li>
-                            <img src="./img/tit3.png"></img><br>
-                            <span class="price" id="usdDealBascRt">951.32</span>
-                        </li>
-                        <li>
-                            <img src="./img/tit4.png"></img><br>
-                            <span class="price" id="usdDealBascRt">186.58</span>
-                        </li>
-                    </ul>
-                    <span>매매기준율 2023-05-24 11:26:36 기준</span><br>
-                    <button class="exchange"><strong>환율 더보기 +</strong></button>
-                </div>
+<!-- Service Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h1 class="mb-5">Best 환율</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="width: 20%;">
+                <a class="service-item rounded" href="">
+                    <div class="service-icon bg-transparent border rounded p-1">
+                        <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                            <img src="./img/usa.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <p class="text-body mb-0">미국 USD</p>
+                    <h5 class="mb-3" data-toggle="counter-up">1,318.20</h5>
+
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="width: 20%;">
+                <a class="service-item rounded" href="">
+                    <div class="service-icon bg-transparent border rounded p-1">
+                        <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                            <img src="./img/china.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <p class="text-body mb-0">중국 CNY</p>
+                    <h5 class="mb-3" data-toggle="counter-up">186.58</h5>
+
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="width: 20%;">
+                <a class="service-item rounded" href="">
+                    <div class="service-icon bg-transparent border rounded p-1">
+                        <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                            <img src="./img/japan.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <p class="text-body mb-0">일본 JPY(100엔)</p>
+                    <h5 class="mb-3" data-toggle="counter-up">951.32</h5>
+
+                </a>
+            </div>
+
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="width: 20%;">
+                <a class="service-item rounded" href="">
+                    <div class="service-icon bg-transparent border rounded p-1">
+                        <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                            <img src="./img/eu.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <p class="text-body mb-0">유럽연합 EUR</p>
+                    <h5 class="mb-3" data-toggle="counter-up">1,420.10</h5>
+
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="width: 20%;">
+                <a class="service-item rounded" href="">
+                    <div class="service-icon bg-transparent border rounded p-1">
+                        <div class="w-100 h-100 border rounded d-flex align-items-center justify-content-center">
+                            <img src="./img/england.png" style="width: 100%;">
+                        </div>
+                    </div>
+                    <p class="text-body mb-0">영국 GBP</p>
+                    <h5 class="mb-3" data-toggle="counter-up">1,640.15</h5>
+                </a>
             </div>
         </div>
     </div>
 </div>
+
+<br><br><br>
 <!-- About Start -->
 <div class="container-xxl py-5">
     <div class="container">
         <div class="row g-5 align-items-center">
             <div class="col-lg-6">
-                <h1 class="mb-4">Welcome to HanaTravel</h1>
+                <h1 class="mb-4">Information</h1>
                 <p class="mb-4">여행지 정보, 사용자 정보, 여행지 리뷰</p>
                 <div class="row g-3 pb-4">
                     <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
@@ -132,7 +192,7 @@
                             <div class="border rounded text-center p-4">
                                 <i class="fa fa-globe fa-2x text-primary mb-2"></i>
                                 <h2 class="mb-1" data-toggle="counter-up">352</h2>
-                                <p class="mb-0">Travel</p>
+                                <p class="mb-0">여행지</p>
                             </div>
                         </div>
                     </div>
@@ -141,7 +201,7 @@
                             <div class="border rounded text-center p-4">
                                 <i class="fa fa-users fa-2x text-primary mb-2"></i>
                                 <h2 class="mb-1" data-toggle="counter-up">452</h2>
-                                <p class="mb-0">User</p>
+                                <p class="mb-0">사용자</p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +210,7 @@
                             <div class="border rounded text-center p-4">
                                 <i class="fa fa-book fa-2x text-primary mb-2"></i>
                                 <h2 class="mb-1" data-toggle="counter-up">812</h2>
-                                <p class="mb-0">Review</p>
+                                <p class="mb-0">리뷰</p>
                             </div>
                         </div>
                     </div>
@@ -248,10 +308,10 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
-                        <img class="img-fluid" src="img/trip/trip2.jpg" alt="">
+                        <img class="img-fluid" style="width: 408px; height:245px;" src="img/trip/trip2.jpg" alt="">
                         <small
                             class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                     </div>
@@ -275,16 +335,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
+            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                 <div class="room-item shadow rounded overflow-hidden">
                     <div class="position-relative">
-                        <img class="img-fluid" src="img/trip/trip3.jpg" alt="">
+                        <img class="img-fluid" style="width: 408px; height:245px;" src="img/trip/trip3.jpg" alt="">
                         <small
                             class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
                     </div>
                     <div class="p-4 mt-2">
                         <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">오페라 하우스</h5>
+                            <h5 class="mb-0">호주 오페라하우스</h5>
                             <div class="ps-2">
                                 <small class="fa fa-star text-primary"></small>
                                 <small class="fa fa-star text-primary"></small>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .message{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: lightgray;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            document.querySelector('#btn-add').addEventListener('click', function(){
+                let div = document.createElement('div');
+                div.classList.add("message");
+                
+                document.body.appendChild(div);
+                
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="btn-add">추가</button>
+    <div class="message"></div>
+</body>
+</html>

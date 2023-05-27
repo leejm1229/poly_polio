@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/about.html</loc>
-</url>
-<url>
-<loc>http://localhost:4000/company.html</loc>
-</url>
-<url>
 <loc>http://localhost:4000/temp/</loc>
 </url>
 <url>
@@ -25,10 +19,6 @@
 <loc>http://localhost:4000/login.html</loc>
 </url>
 <url>
-<loc>http://localhost:4000/convert.html</loc>
-<lastmod>2023-05-23T13:13:06+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/exercise/dom01.html</loc>
 <lastmod>2023-05-25T14:25:02+09:00</lastmod>
 </url>
@@ -43,6 +33,14 @@
 <url>
 <loc>http://localhost:4000/exercise/dom05.html</loc>
 <lastmod>2023-05-25T15:24:51+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/exercise/dom06.html</loc>
+<lastmod>2023-05-26T14:29:42+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/exercise/dom07.html</loc>
+<lastmod>2023-05-26T14:41:17+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/exercise/if01.html</loc>
@@ -67,5 +65,13 @@
 <url>
 <loc>http://localhost:4000/exercise/test.html</loc>
 <lastmod>2023-05-23T13:29:40+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/register.html</loc>
+<lastmod>2023-05-27T15:18:40+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/test.html</loc>
+<lastmod>2023-05-27T14:44:03+09:00</lastmod>
 </url>
 </urlset>
