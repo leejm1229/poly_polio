@@ -57,8 +57,17 @@
         align-items: center;
     }
 
-    #main_color .carousel-item {
-        transform: scale(0.8); 
+    @keyframes shrinkAnimation {
+        0% {
+          transform: scale(1); /* 원래 크기 */
+        }
+        100% {
+          transform: scale(0.8); /* 축소된 크기 */
+        }
+    }
+    
+    #main_color .carousel-item img {
+        animation: shrinkAnimation 0.5s ease-in-out forwards;
     }
 
     .renewal2021 {
@@ -393,7 +402,7 @@
     
     .carousel-control-prev,
     .carousel-control-next {
-    width: 10%;
+    width: 20%;
     }
     
     .carousel-control-prev-icon,
