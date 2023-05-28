@@ -16,6 +16,34 @@
         color : #666565; 
     }
 
+    @keyframes slide-up {
+        0% {
+            transform: translateY(100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .custom-div {
+        background-color: white;
+        color: black;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        padding: 10px;
+        width: 40%;
+        height: 200px;
+    }
+
+    .slide-in {
+        animation: slide-up 1s ease-in-out;
+        animation-fill-mode: forwards;
+    }
+
     @keyframes slide {
         0% {
             transform: translateX(0%);
@@ -24,6 +52,8 @@
             transform: translateX(-100%);
         }
     }
+
+    
 
 
     @keyframes gradient {
@@ -45,7 +75,6 @@
     #main_color {
         margin-top:1px;
         width: 100%;
-        /* height: 450px; */
         background: linear-gradient(-45deg, #fc5c7d, #6610f2, #6a82fb, #eaafc8);
         animation: gradient 15s ease infinite;
         background-size: 400% 400%;
@@ -255,6 +284,10 @@
     overflow: hidden;
     }
     
+    .country{
+        border : 0.5px solid black;
+    }
+
     .exchange_rate{
     text-align: center;
     margin-bottom: 0;
