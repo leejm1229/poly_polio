@@ -25,7 +25,6 @@
     }
     }
 
-
     .sub_logo {
     color: #fffbf1;
     font-size: 55px;
@@ -75,7 +74,6 @@
     
     .custom-div {
     background-color: white;
-    border : 2px solid #009591;
     color: black;
     position: absolute;
     top: 50%;
@@ -101,7 +99,7 @@
     }
     
     #content{
-        font-size: 25px;
+        font-size: 30px;
     }
 
     #additional{
@@ -492,8 +490,7 @@
     
     .carousel-control-prev,
     .carousel-control-next {
-        height : 5%;
-        margin-top : 180px;
+    width: 20%;
     }
     
     .carousel-control-prev-icon,
@@ -772,15 +769,15 @@
     .testimonial-carousel .owl-nav .owl-prev,
     .testimonial-carousel .owl-nav .owl-next {
     position: relative;
-    width: 20px;
-    height: 2px;
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     background: var(--primary);
     border-radius: 2px;
-    /* font-size: 18px; */
+    font-size: 18px;
     transition: .5s;
     }
     

@@ -11,51 +11,108 @@
     body {
     font-size: 14px;
     }
-
-    .link_crfix > li > a{
-        color : #666565; 
-    }
-
-    @keyframes slide-up {
-        0% {
-            transform: translateY(100%);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
-
-    .custom-div {
-        background-color: white;
-        color: black;
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translate(0, -50%);
-        padding: 10px;
-        width: 40%;
-        height: 200px;
-    }
-
-    .slide-in {
-        animation: slide-up 1s ease-in-out;
-        animation-fill-mode: forwards;
-    }
-
-    @keyframes slide {
-        0% {
-            transform: translateX(0%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-
     
+    .link_crfix > li > a{
+    color : #666565;
+    }
+    
+    @keyframes tipsy {
+    0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+    }
 
 
+    .sub_logo {
+    color: #fffbf1;
+    font-size: 55px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    transform: translateX(-50%) translateY(-50%);
+    }
+    
+    .sub_logo:before,
+    .sub_logo:after {
+    content: '';
+    padding: .9em .4em;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    display: block;
+    border: 15px solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 13s infinite alternate ease-in-out tipsy;
+    }
+    
+    .sub_logo:before {
+    border-color: #009591 #009591 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+    }
+    
+    .sub_logo:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #009591 #009591;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+    }
+    
+    @keyframes slide-up {
+    0% {
+    transform: translateY(100%);
+    opacity: 0;
+    }
+    100% {
+    transform: translateY(0);
+    opacity: 1;
+    }
+    }
+    
+    .custom-div {
+    background-color: white;
+    border : 2px solid #009591;
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 10px;
+    width: 40%;
+    height: 200px;
+    }
+    
+    .slide-in {
+    animation: slide-up 1s ease-in-out;
+    animation-fill-mode: forwards;
+    }
+    
+    @keyframes slide {
+    0% {
+    transform: translateX(0%);
+    }
+    100% {
+    transform: translateX(-100%);
+    }
+    }
+    
+    #content{
+        font-size: 25px;
+    }
+
+    #additional{
+        position: relative;
+        margin-left: 5px;
+        color: #000;
+        font-weight: 100;
+        line-height: 22px;
+    }
+    
+    
     @keyframes gradient {
     0% {
     background-position: 0% 0%;
@@ -71,34 +128,34 @@
     background-position: 0% 0%;
     }
     }
-
+    
     #main_color {
-        margin-top:1px;
-        width: 100%;
-        background: linear-gradient(-45deg, #fc5c7d, #6610f2, #6a82fb, #eaafc8);
-        animation: gradient 15s ease infinite;
-        background-size: 400% 400%;
-        padding-right: 100px;
-        font-family: 'NanumSquareRound', sans-serif;
-        font-weight: bold;
-        position: relative;
-        justify-content: center;
-        align-items: center;
+    margin-top:1px;
+    width: 100%;
+    background: linear-gradient(-45deg, #fc5c7d, #6610f2, #6a82fb, #eaafc8);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    padding-right: 100px;
+    font-family: 'NanumSquareRound', sans-serif;
+    font-weight: bold;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     }
-
+    
     @keyframes shrinkAnimation {
-        0% {
-          transform: scale(1); /* 원래 크기 */
-        }
-        100% {
-          transform: scale(0.8); /* 축소된 크기 */
-        }
+    0% {
+    transform: scale(1); /* 원래 크기 */
+    }
+    100% {
+    transform: scale(0.8); /* 축소된 크기 */
+    }
     }
     
     #main_color .carousel-item img {
-        animation: shrinkAnimation 0.5s ease-in-out forwards;
+    animation: shrinkAnimation 0.5s ease-in-out forwards;
     }
-
+    
     .renewal2021 {
     width: 1280px;
     padding : 0 25px;
@@ -285,9 +342,9 @@
     }
     
     .country{
-        border : 0.5px solid black;
+    border : 0.5px solid black;
     }
-
+    
     .exchange_rate{
     text-align: center;
     margin-bottom: 0;
@@ -397,7 +454,7 @@
     }
     
     .img-fluid{
-        width:100%;
+    width:100%;
     }
     
     /*** Navbar ***/
@@ -435,7 +492,8 @@
     
     .carousel-control-prev,
     .carousel-control-next {
-    width: 20%;
+        height : 5%;
+        margin-top : 180px;
     }
     
     .carousel-control-prev-icon,
@@ -714,15 +772,15 @@
     .testimonial-carousel .owl-nav .owl-prev,
     .testimonial-carousel .owl-nav .owl-next {
     position: relative;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 2px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
     background: var(--primary);
     border-radius: 2px;
-    font-size: 18px;
+    /* font-size: 18px; */
     transition: .5s;
     }
     

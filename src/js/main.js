@@ -165,33 +165,3 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     });
 });
-
-const texts = [
-    { content: '공항서비스', additional: '여행 라운지' },
-    { content: '최대 10만머니', additional: '스탬프' },
-    { content: '트래블로그', additional: '환율 100% 우대' }
-];
-
-let currentIndex = 0;
-const contentElement = document.getElementById('content');
-const additionalElement = document.getElementById('additional');
-
-function changeText() {
-    const currentText = texts[currentIndex];
-
-    contentElement.classList.remove('slide-in');
-    contentElement.textContent = currentText.content;
-    setTimeout(() => {
-        contentElement.classList.add('slide-in');
-    }, 200);
-
-    additionalElement.classList.remove('slide-in');
-    additionalElement.textContent = currentText.additional;
-    setTimeout(() => {
-        additionalElement.classList.add('slide-in');
-    }, 400);
-
-    currentIndex = (currentIndex + 1) % texts.length;
-}
-
-    setInterval(changeText, 5000);
