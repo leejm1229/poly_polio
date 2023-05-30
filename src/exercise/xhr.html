@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let xhr = new XMLHttpRequest();
+        xhr.open("GET", "student.json");
+        xhr.send();
+    
+        xhr.onreadystatechange = function(event){
+            if(xhr.readyState == 4){
+                // 자료 처리가 끝나서 프로그램에서
+                // 사용할 수 있는 상태
+                if(xhr.status == 200){
+                    console.log("success");
+                    console.log(xhr.responseText);
+                }else{
+                    //에러 발생 시
+                }
+            }
+        }
+    </script>
+    <h1>xhr 실습</h1>
+</body>
+</html>

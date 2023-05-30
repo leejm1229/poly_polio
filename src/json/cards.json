@@ -1,0 +1,16 @@
+{
+    "cards": [
+    {
+        "image": "./img/card/anyPlus.png",
+        "description": "국내 가맹점 0.7%, 국내 온라인/해외 가맹점 1.7% 할인"
+    },
+    {
+        "image": "./img/card/트래블로그.gif",
+        "description": "신용카드와 외화 하나머니의 만남"
+    },
+    {
+        "image": "./img/card/vivax.png",
+        "description": "해외 수수료 완전 면제"
+    }
+    ]
+}
