@@ -1,7 +1,6 @@
 (function ($) {
     "use strict";
 
-    // Spinner
     var spinner = function () {
         setTimeout(function () {
             if ($('#spinner').length > 0) {
@@ -11,12 +10,10 @@
     };
     spinner();
     
-    
-    // Initiate the wowjs
+
     new WOW().init();
     
-    
-    // Dropdown on mouse hover
+
     const $dropdown = $(".dropdown");
     const $dropdownToggle = $(".dropdown-toggle");
     const $dropdownMenu = $(".dropdown-menu");
@@ -58,14 +55,12 @@
     });
 
 
-    // Facts counter
     $('[data-toggle="counter-up"]').counterUp({
         delay: 10,
         time: 2000
     });
 
 
-    // Modal Video
     $(document).ready(function () {
         var $videoSrc;
         $('.btn-play').click(function () {
@@ -82,8 +77,6 @@
         })
     });
 
-
-    // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
         smartSpeed: 1000,
@@ -108,7 +101,6 @@
 })(jQuery);
 
 
-// 직전 짠거
 document.addEventListener("DOMContentLoaded", function() {
     var form = document.querySelector("form");
     var emailInput = document.getElementById("email");
