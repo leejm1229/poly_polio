@@ -10,6 +10,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/index2.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/temp/lay2.html</loc>
 </url>
 <url>
@@ -90,6 +93,10 @@
 <url>
 <loc>http://localhost:4000/exercise/jquery-ajax01.html</loc>
 <lastmod>2023-05-30T13:34:01+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/exercise/kakao.html</loc>
+<lastmod>2023-05-31T13:07:51+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/exercise/menu01.html</loc>

@@ -9,13 +9,6 @@
     <meta content="" name="description">
 
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet">
-
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -30,6 +23,69 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .area_center {
+            position: relative;
+            display: inline-block;
+            width: 30%;
+            height: auto;
+            top: 10%;
+            right:10%;
+        }
+    
+        .intro_card {
+            display: block;
+            width: 100%;
+            transform: rotate(-10deg);
+        }
+    
+        .chapter_01 {
+            position: absolute;
+            top: 0;
+            left: 20%;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .chapter_01 p {
+            display: inline-block;
+            font-weight: 300;
+            font-size: 36px;
+            animation: scaleAnimation 2s infinite;
+            transform-origin: center;
+            opacity: 0;
+            color: white;
+        }
+    
+        .chapter_01 p:nth-child(1) {
+            animation-delay: 0s;
+        }
+    
+        .chapter_01 p:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+    
+        .chapter_01 p:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+    
+        @keyframes scaleAnimation {
+            0%, 100% {
+                transform: scale(1);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(0.8);
+                opacity: 1;
+            }
+        }
+    </style>
+    
 </head>
 
 <body>
@@ -62,7 +118,7 @@
             </a>
 
             <div class="main_menu">
-                <a href="./cardList.html" class="menu-button">카드</a>
+                <a href="./cardList.html" class="menu-button" style="font-family: 'Hana2-Bold';">카드</a>
                 <a href="./tripList.html" class="menu-button">여행</a>
                 <button class="menu-button">환율</button>
                 <button class="menu-button">미정</button>
@@ -77,54 +133,27 @@
     </div>
     <div class="divide_line"></div>
 
-
-
     <div class="container-fluid p-0 mb-5">
         <div id="main_color">
-            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="slide-content">
-                            <img class="w-100" src="img/ad/ad1.png" alt="Image">
-                            <div class="custom-div slide-in">
-                                <p id="content">트래블로그 혜택이 더 커졌어요!</p>
-                                <p id="additional">18개 통화 최대 환율 100% 우대</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="slide-content">
-                            <img class="w-100" src="img/ad/ad2.png" alt="Image">
-                            <div class="custom-div slide-in">
-                                <p id="content">여행갈 때 꼭 챙기는 공항서비스</p>
-                                <p id="additional">G.Lab 여행라운지</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="area_center">
+                <img src="./img/card/트래블로그.png" style="width: 50%;"class="intro_card">
+                <div class="chapter_01">
+                    <p class="txt_01">여행을 위한</p>
+                    <p class="txt_02">세계 어디에서나</p>
+                    <p class="txt_03">TRAVLOG</p>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
             </div>
-            <div>
+            <div class="sub_logo_wrapper">
                 <span class="sub_logo" target="_blank">하나카드 | Travel</span>
             </div>
-
         </div>
     </div>
     <br>
 
     <div style="text-align: center;">
-        <button class="w-btn-outline w-btn-green2-outline" id="recommendationBtn">추천카드</button>
-        <button class="w-btn-outline w-btn-green2-outline" id="travelBtn">여행지</button>
-        <button class="w-btn-outline w-btn-green2-outline" id="exchangeBtn">환율</button>
+        <button id="recommendationBtn">추천카드</button>
+        <button id="travelBtn">여행지</button>
+        <button id="exchangeBtn">환율</button>
     </div>
     <br>
 

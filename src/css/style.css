@@ -1,4 +1,55 @@
-/********** Template CSS **********/
+/* 하나금융그룹 폰트 */
+@font-face {
+    font-family: Hana2-Light;
+    src: url('../assets/Hana2.0_TTF/Hana2-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Hana2-Regular;
+    src: url('../assets/Hana2.0_TTF/Hana2-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Hana2-Medium;
+    src: url('../assets/Hana2.0_TTF/Hana2-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Hana2-Bold;
+    src: url('../assets/Hana2.0_TTF/Hana2-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Hana2-Heavy;
+    src: url('../assets/Hana2.0_TTF/Hana2-Heavy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: Hana2-CM;
+    src: url('../assets/Hana2.0_TTF/Hana2-CM.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 오뮤_다예쁨체;
+    src: url('../assets/Hana2.0_TTF/오뮤_다예쁨체.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+
 :root {
     --primary: #009591;
     --light: #F1F8FF;
@@ -10,6 +61,7 @@
     }
     body {
     font-size: 14px;
+    font-family: 'Hana2-Medium';
     }
     
     .link_crfix > li > a{
@@ -25,17 +77,33 @@
     }
     }
 
+    #main_color {
+        margin-top:2px;
+        width: 100%;
+        height: 500px;
+        background: linear-gradient(-45deg, #fc5c7d, #6610f2, #6a82fb, #eaafc8);
+        animation: gradient 15s ease infinite;
+        background-size: 400% 400%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-right: 100px;
+        font-weight: bold;
+        position: relative;
+        margin-top: 1px;
+    }
 
     .sub_logo {
-    color: #fffbf1;
-    font-size: 55px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    right: -10%;
-    transform: translateX(-50%) translateY(-50%);
+        color: #fffbf1;
+        font-size: 75px;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        right: -5%;
+        transform: translateX(-50%) translateY(-50%);
+        white-space: nowrap;
     }
     
     .sub_logo:before,
@@ -129,19 +197,6 @@
     }
     }
     
-    #main_color {
-    margin-top:1px;
-    width: 100%;
-    background: linear-gradient(-45deg, #fc5c7d, #6610f2, #6a82fb, #eaafc8);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    padding-right: 100px;
-    font-family: 'NanumSquareRound', sans-serif;
-    font-weight: bold;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    }
     
     @keyframes shrinkAnimation {
     0% {
@@ -179,7 +234,6 @@
     .link_crfix{
     display: flex;
     list-style: none;
-    font-family: inherit;
     margin: 0;
     line-height: inherit;
     }
@@ -291,7 +345,6 @@
     position: absolute;
     top: 0px;
     left: 9023px;
-    font-family: Noto Sans KR;
     font-weight: DemiLight;
     font-size: 12px;
     opacity: 1;
@@ -319,7 +372,6 @@
     position: absolute;
     top: 0px;
     left: 8935px;
-    font-family: Noto Sans KR;
     font-weight: DemiLight;
     font-size: 12px;
     opacity: 1;
@@ -355,7 +407,6 @@
     margin-bottom: 0;
     line-height: 50px;
     border-bottom: 0;
-    font-family: 'Notosans_Regular';
     display : block;
     background-color : #f5f5f2;
     }
@@ -380,7 +431,6 @@
     
     .price {
     padding-top: 21px;
-    font-family: Arial,Helvetica,sans-serif;
     font-size: 42px;
     letter-spacing: -2px;
     height: 36px;
