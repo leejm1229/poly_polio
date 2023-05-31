@@ -223,7 +223,12 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    color : black;
     }
+
+    .menu-button:hover {
+        color: black;
+      }
     
     .search:hover{
     background-color: #009591;

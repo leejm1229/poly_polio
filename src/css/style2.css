@@ -28,13 +28,13 @@
 
     .sub_logo {
     color: #fffbf1;
-    font-size: 55px;
+    font-size: 60px;
     font-weight: bold;
     text-decoration: none;
     margin: 0;
     position: absolute;
     top: 50%;
-    right: -10%;
+    right: 5%;
     transform: translateX(-50%) translateY(-50%);
     }
     
@@ -418,6 +418,15 @@
     opacity: 1;
     }
     
+    .w-btn-green2-outline {
+        border: 3px solid #519d9e;
+        color: darkgray;
+    }
+
+    .w-btn-green2-outline:hover {
+        background-color: #519d9e;
+        color: #9dc8c8;
+    }
     
     /*** Button ***/
     .btn {

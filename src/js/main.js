@@ -355,3 +355,40 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("JSON 파일 에러", error);
         });
 });
+
+
+function initializeWow() {
+    new WOW().init();
+}
+// Get references to the buttons and sections
+const recommendationBtn = document.getElementById("recommendationBtn");
+const travelBtn = document.getElementById("travelBtn");
+const exchangeBtn = document.getElementById("exchangeBtn");
+const cardSection = document.getElementById("cardSection");
+const travelSection = document.getElementById("travelSection");
+const exchangeSection = document.getElementById("exchangeSection");
+
+// Add event listeners to the buttons
+recommendationBtn.addEventListener("click", () => {
+    // Show the card section and hide the travel section
+    cardSection.style.display = "block";
+    travelSection.style.display = "none";
+    exchangeSection.style.display = "none";
+    initializeWow();
+});
+
+travelBtn.addEventListener("click", () => {
+    // Show the travel section and hide the card section
+    cardSection.style.display = "none";
+    travelSection.style.display = "block";
+    exchangeSection.style.display = "none";
+    initializeWow();
+});
+
+exchangeBtn.addEventListener("click", () => {
+    // Show the travel section and hide the card section
+    cardSection.style.display = "none";
+    travelSection.style.display = "none";
+    exchangeSection.style.display = "block";
+    initializeWow();
+});
