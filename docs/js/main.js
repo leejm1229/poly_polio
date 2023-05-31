@@ -237,7 +237,7 @@ document.addEventListener("DOMContentLoaded", function () {
             cards.forEach(function (card) {
                 let cardItem = document.createElement("div");
                 cardItem.className = "col-lg-4 col-md-6 wow fadeInUp";
-                cardItem.setAttribute("data-wow-delay", "0.1s");
+                cardItem.setAttribute("data-wow-delay", "0.2s");
 
                 let cardLink = document.createElement("a");
                 cardLink.className = "service-item rounded";

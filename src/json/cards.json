@@ -11,6 +11,30 @@
     {
         "image": "./img/card/vivax.png",
         "description": "해외 수수료 완전 면제"
+    },
+    {
+        "image": "./img/card/모두의건강.png",
+        "description": "카드혜택과 건강까지 모두 챙기자!"
+    },
+    {
+        "image": "./img/card/clubSK.png",
+        "description": "clubSK 신청하자!"
+    },
+    {
+        "image": "./img/card/skypass.png",
+        "description": "지금 바로 스카이패스"
+    },
+    {
+        "image": "./img/card/밀리언달로그.png",
+        "description": "해외에서 달러(USD)로 결제"
+    },
+    {
+        "image": "./img/card/아멕스.png",
+        "description": "1천원당 최대 2마일!"
+    },
+    {
+        "image": "./img/card/AsianaClub.png",
+        "description": "실적 관계없이, 적립한도 없이!"
     }
     ]
 }

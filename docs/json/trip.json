@@ -13,7 +13,7 @@
         "image": "img/trip/trip2.jpg",
         "price": "$100/Night",
         "title": "오사카",
-        "stars": 5,
+        "stars": 4.5,
         "description": "여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정",
         "detailUrl": "tripDetail.html?id=2",
         "reservationUrl": "reservation.html?id=2"
@@ -26,6 +26,35 @@
         "description": "여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정",
         "detailUrl": "tripDetail.html?id=3",
         "reservationUrl": "reservation.html?id=3"
+    },
+    {
+        "image": "img/trip/trip4.png",
+        "price": "$100/Night",
+        "title": "이탈리아 로마",
+        "stars": 4,
+        "description": "여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정",
+        "detailUrl": "tripDetail.html?id=3",
+        "reservationUrl": "reservation.html?id=3"
+    },
+    {
+        "image": "img/trip/trip5.png",
+        "price": "$100/Night",
+        "title": "미국 뉴욕",
+        "stars": 5,
+        "description": "여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정",
+        "detailUrl": "tripDetail.html?id=3",
+        "reservationUrl": "reservation.html?id=3"
+    },
+    {
+        "image": "img/trip/trip6.png",
+        "price": "$100/Night",
+        "title": "이탈리아 베니스",
+        "stars": 3,
+        "description": "여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정",
+        "detailUrl": "tripDetail.html?id=3",
+        "reservationUrl": "reservation.html?id=3"
     }
+    
+    
     ]
 }

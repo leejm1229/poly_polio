@@ -2,243 +2,116 @@
 layout : base
 ---
 
-<!-- Carousel Start -->
 <div class="container-fluid p-0 mb-5">
     <div id="main_color">
-        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="slide-content">
-                        <img class="w-100" src="img/ad/ad1.png" alt="Image">
-                        <div class="custom-div slide-in">
-                            <p id="content">트래블로그 혜택이 더 커졌어요!</p>
-                            <p id="additional">18개 통화 최대 환율 100% 우대</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="slide-content">
-                        <img class="w-100" src="img/ad/ad2.png" alt="Image">
-                        <div class="custom-div slide-in">
-                            <p id="content">여행갈 때 꼭 챙기는 공항서비스</p>
-                            <p id="additional">G.Lab 여행라운지</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="area_center">
+            <img src="./img/card/트래블로그.png" class="intro_card">
+            <div class="chapter_01">
+                <p class="txt_01">여행을 위한</p>
+                <p class="txt_02">세계 어디에서나</p>
+                <p class="txt_03">TRAVLOG</p>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-        <div>
+        <div class="sub_logo_wrapper">
             <span class="sub_logo" target="_blank">하나카드 | Travel</span>
         </div>
-        
     </div>
 </div>
 <br>
-<!-- Carousel End -->
 
-<!-- Service Start -->
-<div class="container-xxl py-5">
+<div class="section-container border-section-container">
     <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h1 class="mb-5">Best 환율</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="width: 20%;">
-                <a class="service-item" href="">
-                    <div class="service-icon bg-transparent">
-                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img class="country" src="./img/usa.png" style="width: 100%;">
-                        </div>
-                    </div>
-                    <p class="text-body mb-0">미국 USD</p>
-                    <h5 class="mb-3" data-toggle="counter-up">1,318.20</h5>
-
-                </a>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="fa-container">
+                    <button id="recommendationBtn">
+                        <img src="./img/card.png" class="list-img">
+                    </button>
+                </div>
+                <div class="text-center">
+                    <h3>추천 카드</h3>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.4s" style="width: 20%;">
-                <a class="service-item" href="">
-                    <div class="service-icon bg-transparent">
-                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img class="country" src="./img/china.png" style="width: 100%;">
-                        </div>
-                    </div>
-                    <p class="text-body mb-0">중국 CNY</p>
-                    <h5 class="mb-3" data-toggle="counter-up">186.58</h5>
-
-                </a>
+            <div class="col-md-4">
+                <div class="fa-container">
+                    <button id="travelBtn" class="no-bg">
+                        <img src="./img/travel.png" class="list-img">
+                    </button>
+                </div>
+                <div class="text-center">
+                    <h3>추천 여행지</h3>
+                </div>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="width: 20%;">
-                <a class="service-item" href="">
-                    <div class="service-icon bg-transparent">
-                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img class="country" src="./img/japan.png" style="width: 100%;">
-                        </div>
-                    </div>
-                    <p class="text-body mb-0">일본 JPY(100엔)</p>
-                    <h5 class="mb-3" data-toggle="counter-up">951.32</h5>
-
-                </a>
-            </div>
-
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s" style="width: 20%;">
-                <a class="service-item" href="">
-                    <div class="service-icon bg-transparent">
-                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img class="country" src="./img/eu.png" style="width: 100%;">
-                        </div>
-                    </div>
-                    <p class="text-body mb-0">유럽연합 EUR</p>
-                    <h5 class="mb-3" data-toggle="counter-up">1,420.10</h5>
-
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="width: 20%;">
-                <a class="service-item" href="">
-                    <div class="service-icon bg-transparent">
-                        <div class="w-100 h-100 d-flex align-items-center justify-content-center">
-                            <img class="country" src="./img/england.png" style="width: 100%;">
-                        </div>
-                    </div>
-                    <p class="text-body mb-0">영국 GBP</p>
-                    <h5 class="mb-3" data-toggle="counter-up">1,640.15</h5>
-                </a>
+            <div class="col-md-4">
+                <div class="fa-container">
+                    <button id="exchangeBtn">
+                        <img src="./img/exchange.png" class="list-img">
+                    </button>
+                </div>
+                <div class="text-center">
+                    <h3>Best 환율</h3>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Card Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Cards</h6>
-            <h1 class="mb-5">추천카드</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <a class="service-item rounded" href="">
-                    <img src="./img/card/anyPlus.png" alt="">
-                    <br>
-                    <p class="text-body mb-0">국내 가맹점 0.7%, 국내 온라인/해외 가맹점 1.7% 할인</p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
-                <a class="service-item rounded" href="">
-                    <img src="./img/card/트래블로그.gif" alt="">
-                    <br>
-                    <p class="text-body mb-0">신용카드와 외화 하나머니의 만남</p>
-                </a>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <a class="service-item rounded" href="">
-                    <img src="./img/card/vivax.png" alt="">
-                    <br>
-                    <p class="text-body mb-0">해외 수수료 완전 면제</p>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Card End -->
 
-<!-- Travel Start -->
-<div class="container-xxl py-5">
+{% include center.html %}
+<div style="background: linear-gradient(135deg, rgba(177,244,220,1) 0%, rgba(242,221,247,1) 100%);">
     <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="section-title text-center text-primary text-uppercase">Our Info</h6>
-            <h1 class="mb-5">오늘의 여행지</h1>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="room-item shadow rounded overflow-hidden">
-                    <div class="position-relative">
-                        <img class="img-fluid" style="width: 408px; height:245px;" src="img/trip/trip1.jpg" alt="">
-                        <small
-                            class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
-                    </div>
-                    <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">루브르 박물관</h5>
-                            <div class="ps-2">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-6" style="text-align: center;">
+                <h1 class="mb-4">Information</h1>
+                <p class="mb-4">더 많은 정보를 확인해보세요.</p>
+                <div class="row g-3 pb-4">
+                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="border rounded p-1">
+                            <div class="border rounded text-center p-4">
+                                <i class="fa fa-globe fa-2x text-primary mb-2"></i>
+                                <h2 class="mb-1" data-toggle="counter-up">352</h2>
+                                <p class="mb-0">여행지</p>
                             </div>
                         </div>
-
-                        <p class="text-body mb-3">여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정</p>
-                        <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">상세정보</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">예약</a>
+                    </div>
+                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="border rounded p-1">
+                            <div class="border rounded text-center p-4">
+                                <i class="fa fa-users fa-2x text-primary mb-2"></i>
+                                <h2 class="mb-1" data-toggle="counter-up">452</h2>
+                                <p class="mb-0">사용자</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="border rounded p-1">
+                            <div class="border rounded text-center p-4">
+                                <i class="fa fa-book fa-2x text-primary mb-2"></i>
+                                <h2 class="mb-1" data-toggle="counter-up">812</h2>
+                                <p class="mb-0">리뷰</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <a class="btn btn-primary py-3 px-5 mt-2" href="">더보기</a>
             </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="room-item shadow rounded overflow-hidden">
-                    <div class="position-relative">
-                        <img class="img-fluid" style="width: 408px; height:245px;" src="img/trip/trip2.jpg" alt="">
-                        <small
-                            class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+            <div class="col-lg-6">
+                <div class="row g-3">
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="img/about-1.jpg"
+                            style="margin-top: 25%;">
                     </div>
-                    <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">오사카</h5>
-                            <div class="ps-2">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                        </div>
-
-                        <p class="text-body mb-3">여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정</p>
-                        <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">상세정보</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">예약</a>
-                        </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="img/about-2.jpg">
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="room-item shadow rounded overflow-hidden">
-                    <div class="position-relative">
-                        <img class="img-fluid" style="width: 408px; height:245px;" src="img/trip/trip3.jpg" alt="">
-                        <small
-                            class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                    <div class="col-6 text-end">
+                        <img class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="img/about-3.jpg">
                     </div>
-                    <div class="p-4 mt-2">
-                        <div class="d-flex justify-content-between mb-3">
-                            <h5 class="mb-0">호주 오페라하우스</h5>
-                            <div class="ps-2">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                        </div>
-
-                        <p class="text-body mb-3">여행지 정보를 넣을건 맞는데 숙박업소는 미정 여행지를 넣을 예정</p>
-                        <div class="d-flex justify-content-between">
-                            <a class="btn btn-sm btn-primary rounded py-2 px-4" href="">상세정보</a>
-                            <a class="btn btn-sm btn-dark rounded py-2 px-4" href="">예약</a>
-                        </div>
+                    <div class="col-6 text-start">
+                        <img class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="img/about-4.jpg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Travel End -->
