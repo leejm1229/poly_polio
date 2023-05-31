@@ -56,6 +56,10 @@
 <lastmod>2023-05-26T14:41:17+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/exercise/drag.html</loc>
+<lastmod>2023-05-31T10:05:55+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/exercise/fetch01.html</loc>
 <lastmod>2023-05-30T13:41:08+09:00</lastmod>
 </url>
@@ -88,6 +92,10 @@
 <lastmod>2023-05-30T13:34:01+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/exercise/menu01.html</loc>
+<lastmod>2023-05-31T09:27:46+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/exercise/temp.html</loc>
 <lastmod>2023-05-23T11:47:23+09:00</lastmod>
 </url>
@@ -109,7 +117,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/test.html</loc>
-<lastmod>2023-05-29T16:39:44+09:00</lastmod>
+<lastmod>2023-05-31T10:45:30+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/vendor/bootstrap-icons/font/</loc>
