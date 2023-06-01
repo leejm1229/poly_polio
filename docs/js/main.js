@@ -360,7 +360,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function initializeWow() {
     new WOW().init();
 }
-// Get references to the buttons and sections
+
 const recommendationBtn = document.getElementById("recommendationBtn");
 const travelBtn = document.getElementById("travelBtn");
 const exchangeBtn = document.getElementById("exchangeBtn");
@@ -368,9 +368,8 @@ const cardSection = document.getElementById("cardSection");
 const travelSection = document.getElementById("travelSection");
 const exchangeSection = document.getElementById("exchangeSection");
 
-// Add event listeners to the buttons
+
 recommendationBtn.addEventListener("click", () => {
-    // Show the card section and hide the travel section
     cardSection.style.display = "block";
     travelSection.style.display = "none";
     exchangeSection.style.display = "none";
@@ -378,7 +377,6 @@ recommendationBtn.addEventListener("click", () => {
 });
 
 travelBtn.addEventListener("click", () => {
-    // Show the travel section and hide the card section
     cardSection.style.display = "none";
     travelSection.style.display = "block";
     exchangeSection.style.display = "none";
@@ -386,7 +384,6 @@ travelBtn.addEventListener("click", () => {
 });
 
 exchangeBtn.addEventListener("click", () => {
-    // Show the travel section and hide the card section
     cardSection.style.display = "none";
     travelSection.style.display = "none";
     exchangeSection.style.display = "block";

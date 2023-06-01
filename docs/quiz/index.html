@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+
+        th {
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+        }
+
+        td.checkbox {
+            text-align: center;
+        }
+
+        .pagination {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .pagination button {
+            float: left;
+            margin: 0 5px;
+            padding: 5px 10px;
+        }
+
+        /* 추가된 스타일 */
+        .dragging {
+            background-color: yellow;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="check-all" onclick="toggleCheckboxes()"></th>
+                <th>Id</th>
+                <th>타이틀</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+
+    <div class="pagination" id="pagination"></div>
+
+    <script>
+        var currentPage = 1;
+        var itemsPerPage = 10;
+        var jsonData = [];
+        var totalPages = 0;
+        var draggingRow = null; // 드래그 중인 행을 저장할 변수
+
+        function fetchJSONData() {
+            fetch('forum.json')
+                .then(function (response) {
+                    return response.json();
+                })
+                .then(function (data) {
+                    jsonData = data;
+                    totalPages = Math.ceil(jsonData.length / itemsPerPage);
+                    renderTable(currentPage);
+                    renderPagination();
+                })
+                .catch(function (error) {
+                    console.log('Error fetching JSON data:', error);
+                });
+        }
+
+
+        function renderTable(page) {
+            var tableBody = document.getElementById('table-body');
+            tableBody.innerHTML = '';
+
+            var startIndex = (page - 1) * itemsPerPage;
+            var endIndex = startIndex + itemsPerPage;
+
+            for (var i = startIndex; i < endIndex && i < jsonData.length; i++) {
+                var data = jsonData[i];
+
+                var row = document.createElement('tr');
+
+                var checkboxCell = document.createElement('td');
+                var checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkboxCell.className = 'checkbox';
+                checkboxCell.appendChild(checkbox);
+
+                var idCell = document.createElement('td');
+                idCell.textContent = data.id;
+
+                var titleCell = document.createElement('td');
+                titleCell.textContent = data.title;
+
+                row.appendChild(checkboxCell);
+                row.appendChild(idCell);
+                row.appendChild(titleCell);
+
+                if (i % 2 === 0) {
+                    row.style.backgroundColor = 'gray';
+                } else {
+                    row.style.backgroundColor = 'aquamarine';
+                }
+
+                tableBody.appendChild(row);
+
+                checkbox.addEventListener('change', handleCheckboxChange);
+
+                row.addEventListener('mousedown', handleRowMouseDown); // 행에 마우스 다운 이벤트 추가
+            }
+        }
+
+        function handleCheckboxChange(event) {
+            var checkbox = event.target;
+            var row = checkbox.parentNode.parentNode;
+            var isChecked = checkbox.checked;
+
+            if (isChecked) {
+                row.style.backgroundColor = 'red';
+            } else {
+                if (row.rowIndex % 2 === 0) {
+                    row.style.backgroundColor = 'aquamarine';
+                } else {
+                    row.style.backgroundColor = 'gray';
+                }
+            }
+        }
+
+        function handleRowMouseDown(event) {
+            draggingRow = event.currentTarget; // 드래그 중인 행 저장
+            draggingRow.classList.add('dragging'); // 드래깅 중인 행에 스타일 적용
+            document.addEventListener('mousemove', handleDocumentMouseMove); // 문서 전체에서 마우스 이동 이벤트 감지
+            document.addEventListener('mouseup', handleDocumentMouseUp); // 문서 전체에서 마우스 업 이벤트 감지
+        }
+
+        function handleDocumentMouseMove(event) {
+            if (draggingRow) {
+                var tableBody = document.getElementById('table-body');
+                var rows = tableBody.getElementsByTagName('tr');
+                var targetRow = null;
+                for (var i = 0; i < rows.length; i++) {
+                    var row = rows[i];
+                    var rowRect = row.getBoundingClientRect();
+                    if (
+                        event.clientY >= rowRect.top &&
+                        event.clientY <= rowRect.bottom &&
+                        row !== draggingRow
+                    ) {
+                        targetRow = row;
+                        break;
+                    }
+                }
+                if (targetRow) {
+                    // 서로의 행을 바꾸기 위해 데이터를 교환
+                    var draggingRowIndex = Array.prototype.indexOf.call(tableBody.children, draggingRow);
+                    var targetRowIndex = Array.prototype.indexOf.call(tableBody.children, targetRow);
+                    tableBody.insertBefore(draggingRow, targetRow);
+                    jsonData.splice(draggingRowIndex, 1);
+                    jsonData.splice(targetRowIndex, 0, jsonData[draggingRowIndex]);
+                }
+            }
+        }
+
+        function handleDocumentMouseUp(event) {
+            if (draggingRow) {
+                draggingRow.classList.remove('dragging'); // 드래깅 중인 행 스타일 제거
+                draggingRow = null; // 드래그 중인 행 초기화
+                document.removeEventListener('mousemove', handleDocumentMouseMove); // 문서 전체에서 마우스 이동 이벤트 제거
+                document.removeEventListener('mouseup', handleDocumentMouseUp); // 문서 전체에서 마우스 업 이벤트 제거
+            }
+        }
+
+        function renderPagination() {
+            var paginationContainer = document.getElementById('pagination');
+            paginationContainer.innerHTML = '';
+
+            for (var i = 1; i <= totalPages; i++) {
+                var button = document.createElement('button');
+                button.textContent = i;
+                button.dataset.page = i;
+                button.addEventListener('click', function (event) {
+                    var page = parseInt(event.target.dataset.page);
+                    currentPage = page;
+                    renderTable(currentPage);
+                    updateActiveButton();
+                });
+
+                paginationContainer.appendChild(button);
+            }
+
+            updateActiveButton();
+        }
+
+        function updateActiveButton() {
+            var buttons = document.querySelectorAll('.pagination button');
+            buttons.forEach(function (button) {
+                var page = parseInt(button.dataset.page);
+                if (page === currentPage) {
+                    button.classList.add('active');
+                } else {
+                    button.classList.remove('active');
+                }
+            });
+        }
+
+        function toggleCheckboxes() {
+            var checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+            var checkAllCheckbox = document.getElementById('check-all');
+            var isChecked = checkAllCheckbox.checked;
+
+            checkboxes.forEach(function (checkbox) {
+                checkbox.checked = isChecked;
+                var row = checkbox.parentNode.parentNode;
+                if (isChecked) {
+                    row.style.backgroundColor = 'red';
+                } else {
+                    if (row.rowIndex % 2 === 0) {
+                        row.style.backgroundColor = 'aquamarine';
+                    } else {
+                        row.style.backgroundColor = 'gray';
+                    }
+                }
+            });
+        }
+
+        function init() {
+            fetchJSONData();
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
